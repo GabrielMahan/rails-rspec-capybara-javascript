@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'JavaScript messages' do
+feature 'JavaScript messages', js: true do
   let(:text) { 'This is the test message!' }
   let!(:message) { Message.create(text: text) }
 
